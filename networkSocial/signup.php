@@ -27,16 +27,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <body>
+  <body background = "wallpaper.jpg">
     <?php require 'partials/header.php' ?>
 
     <?php if(!empty($message)): ?>
       <p> <?= $message ?> </p>
     <?php endif; ?>
 
-    <h1> SignUp </h1>
-    <span> or <a href="login.php"> Login </a> </span>
-    <form action="signup.php" method="post">
+    <h1 style="color:white"> SignUp </h1>
+    <span style="color:white"> or <a href="login.php" style="color:white"> Login </a> </span>
+    <form action="signup.php" method="post"> 
       <input type="text" name="email" placeholder="Enter your mail">
       <input type="password" name="password" placeholder="Enter your password">
       <input type="password" name="Confirm_password" placeholder="Confirm your password">

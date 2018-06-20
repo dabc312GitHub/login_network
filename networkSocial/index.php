@@ -8,7 +8,6 @@
     $records->bindParam(':id', $_SESSION['user_id']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
-
     $user = null;
 
     if( count($results) > 0 ) {
@@ -26,19 +25,22 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <body>
+  <body background = "wallpaper.jpg">
+
     <?php require 'partials/header.php' ?>
 
-    <?php if (!empty($user)): ?>
-      <br> Welcome. <?= $user['email'] ?>
-      <br> You are Successfully Logged In
-      <a href="logout.php"> Logout </a>
+    <?php if (empty($user)): ?>
 
-    <?php else: ?>
-      <h1> Please Login or SignUp </h1>
+      <h1 style="color:white"> Please Login or SignUp </h1>
 
-      <a href="login.php"> Login </a> or
-      <a href="signup.php"> SignUp </a>
+      <a href="login.php" style="color:white"> Login </a> 
+      <a style="color:white"> or</a>
+      <a href="signup.php" style="color:white"> SignUp </a>
+      <br> <br>
+      <img src="load_app.jpeg" style="width:32%"></img>
+
     <?php endif; ?>
+
+
   <body>
 </html>

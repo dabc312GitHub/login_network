@@ -5,5 +5,5 @@
 
   session_destroy();
 
-  header('Location: /networkSocial');
+  header('Location: /laicos_der');
 ?>

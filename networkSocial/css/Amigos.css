@@ -1,0 +1,22 @@
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.column {
+    flex: 25%;
+    max-width: 25%;
+}
+.column img {
+    margin-top: 10px;
+	margin-left:20px;
+    vertical-align: middle;
+	align-items: center;
+}
+body{
+	background-color: gray;
+	color: white;
+	font-family:courier;
+	font-size:14pt;
+	text-align: center;
+	padding-bottom:20px;
+}

@@ -1,3 +1,3 @@
 <header>
-  <a href="/networkSocial/perfil.php"> Inicio </a>
+  <a href="/laicos_der/" style="color:white"> Inicio </a>
 </header>

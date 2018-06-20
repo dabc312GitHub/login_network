@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 3px;
+}
+.column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 6px;
+}
+.column img {
+    margin-top: 10px;
+    vertical-align: middle;
+	align-items: center;
+}
+body{
+	background-color: gray;
+	font-family:courier;
+	color:white;
+}
+summary{
+	padding-top:10px;
+}

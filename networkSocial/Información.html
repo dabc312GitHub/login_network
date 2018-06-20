@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	
+	<title>Información</title>
+	<link rel="stylesheet" href="css/Información.css"></link>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	
+	$("#Cancelar").hide();
+	$("#Aceptar").hide();
+	$("input").hide();
+	
+	$("#Editar").click(function(){
+        $("#Cancelar").fadeIn();
+        $("#Aceptar").fadeIn();
+		$("table td div").hide();
+		$("input").show();
+    });
+	
+    $("#Aceptar").click(function(){
+		alert("Todavía no se que poner aqui...");
+        $("#Cancelar").fadeOut();
+		$("#Aceptar").fadeOut();
+		$("#Editar").fadeIn();
+		$("table td div").show();
+		$("input").hide();
+    });
+	$("#Cancelar").click(function(){
+		alert("No se guardaran los cambios...");
+        $("#Cancelar").fadeOut();
+		$("#Aceptar").fadeOut();
+		$("#Editar").fadeIn();
+		$("table td div").show();
+		$("input").hide();
+    });
+	
+});
+	</script>
+</head>
+<body>
+	<img id="Perfil" src="profile/p25.png" ></img>
+	<img id="Portada" src="wallpaper.jpg" ></img>
+
+	<table>
+	  <tr>
+		<th>Nombre(s)</th>
+		<td>
+		<div id="t1">nombre</div>
+		<input type="text" name="Nombre" value="Nombre">
+		</td>
+	  </tr>
+	  <tr>
+		<th>Apellido(s)</th>
+		<td>
+		<div id="t2">apellido</div>
+		<input type="text" name="Apellido" value="Apellido">
+		</td>
+	  </tr>
+	  <tr>
+		<th>Carrera</th>
+		<td>
+		<div id="t3">Ciencia de la Computación</div>
+		<input type="text" name="Carrera" value="Carrera">
+		</td>
+	  </tr>
+	  <tr>
+		<th>Semestre</th>
+		<td>
+		<div id="t4">3</div>
+		<input type="number" name="Semestre" min="1" max="12">
+		</td>
+	  </tr>
+	  <tr>
+		<th>Cumpleaños</th>
+		<td>
+		<div id="t5">dd/mm/aa</div>
+		<input type="date" name="bday">
+		</td>
+	  </tr>
+	  <tr>
+		<th>Teléfono</th>
+		<td>
+		<div id="t6">123456789</div>
+		<input type="text" name="Telefono" value="123456789">
+		</td>
+	  </tr>
+	  <tr>
+		<th>Carrera</th>
+		<td>
+		<div id="t7">Ciencia de la Computación</div>
+		<input type="text" name="Carrera" value="Carrera">
+		</td>
+	  </tr><tr>
+		<th>E-mail</th>
+		<td>
+		<div id="t8">e-mail@hotmail.com</div>
+		<input type="email" name="email" value="e-mail@hotmail.com">
+		</td>
+	  </tr>
+	  <tr>
+		<th>Ciudad</th>
+		<td><div id="t9">Arequipa</div>
+		<input type="text" name="Ciudad" value="Ciudad">
+		</td>
+	  </tr>
+	</table> 
+	
+	<button id="Editar" class="button">Editar</button>
+	<button id="Cancelar" class="button a" style="margin-right:175px;">Cancelar</button>
+	<button id="Aceptar" class="button a" style="margin-right:40px;">Aceptar</button>
+	</body>
+</html>
